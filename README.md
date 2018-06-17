@@ -14,5 +14,6 @@ A Discord bot to emulate https://reddit.com/r/askouija in a Discord channel
 4. use `node app.js` to run your bot
 5. go to https://discordapp.com/oauth2/authorize?client_id=CLIENTID&scope=bot&permissions=1 to add your bot to your server
 ## Todo
-* prevent users from replying to their own question, spamming responses
+* ~~prevent users from replying to their own question, spamming responses~~
 * add emojis to be answerable
+* fix glitch that causes bot to crash for unknown reason
