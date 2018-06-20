@@ -30,15 +30,12 @@ client.on("ready", () => {
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+  console.log(`New guild joined!`);
   guilds.push();
   for(i = 0; i < guild.channels.length; i++){
     if(guild.channels[i].name == config.channel) return;
   }
   guild.createChannel(config.channel, "text");
-    for(var chan in guild.channels){
-    if(chan.name == config.channel) chan.send(config.messages.welcome);
-}
 });
 
 client.on("guildDelete", guild => {
