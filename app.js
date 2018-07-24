@@ -122,7 +122,7 @@ client.on("message", async message => {
     else if(message.content.toLowerCase().indexOf(config.commands.goodbye) != -1){
       askingQuestion[index] = false;
       config.messages.question = `The question, asked by ${users[index]}, was: \n\n\` ${questions[index]} \`.`;
-      config.messages.answer =`"\n\nThe answer is: \n\n\`${answers[index]}\``;-+
+      config.messages.answer =`\n\nThe answer is: \n\n\`${answers[index]}\``;-+
       message.channel.send(config.messages.question + config.messages.answer);
       questions[index] = "";
       answers[index] = "";
